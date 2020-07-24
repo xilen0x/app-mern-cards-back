@@ -4,8 +4,9 @@ const URI = process.env.MONGODB_URI;//aki llamo a mi variable de entorno que con
 
 mongoose.connect(URI, { //estas opciones luego de URI, se pueden obviar posteriormente.
     useNewUrlParser: true,
-    //useCreateIndex: true,
-    useUnifiedTopology: true
+/*    useCreateIndex: true,
+    useFindAndModify: true, */
+    useUnifiedTopology:true
 });
 
 const connection = mongoose.connection;
