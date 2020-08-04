@@ -1,5 +1,5 @@
 /**
- * Codigo del servidor
+ * Aplicación de tarjetas - Codigo del servidor
  */
 const express = require('express');//importamos express y lo guardamos en la variable express.
 const cors = require('cors');//modulo q nos permitirá intercambiar datos entre dos servidores.
