@@ -13,8 +13,8 @@ app.use(cors());// para q c/vez q llegue una petición al servidor, éste pueda 
 app.use(express.json());//y esos son los tipos de datos que trabajará(json).
 
 //routes
-/* app.get('/', (req, res) => res.send('Estás en la raiz!'))
-app.get('/api/users', (req, res) => res.send('Users Routes'))
+app.get('/', (req, res) => res.send(`<h1>'Estás en la raiz!'</h1>`))
+/*app.get('/api/users', (req, res) => res.send('Users Routes'))
 app.get('/api/notes', (req, res) => res.send('Notes Routes')) */
 app.use('/api/users', require('./routes/users'))//llamamos a la ruta creada en el archivo users.js y lo mismo con notes.
 app.use('/api/notes', require('./routes/notes'))
