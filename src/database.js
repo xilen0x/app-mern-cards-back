@@ -2,10 +2,8 @@ const mongoose = require('mongoose');
 
 const URI = process.env.MONGODB_URI;//aki llamo a mi variable de entorno que contiene la url de la db.
 
-mongoose.connect(URI, { //estas opciones luego de URI, se pueden obviar posteriormente.
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
-/*    useCreateIndex: true,
-    useFindAndModify: true, */
     useUnifiedTopology:true
 });
 
